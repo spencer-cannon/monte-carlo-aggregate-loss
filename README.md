@@ -2,6 +2,16 @@
 
 A Python simulation of annual insurance losses for a portfolio of 1,000 policies, using a compound Poisson–Gamma model to estimate expected losses and tail risk (VaR and TVaR).
 
+## AI Use Disclosure
+
+This project was built with assistance from Claude (Anthropic), used as a tutor and reviewer.
+
+- **My work:** I designed the assumptions, derived the Gamma parameterization from the mean and CV, wrote the simulation, summary statistics, VaR, and TVaR code with hints and feedback, helped with the visualizations, and drafted the written interpretations.
+  
+- **AI assistance:** Claude structured the project into steps, reviewed and debugged my code, edited my written interpretations, and drafted this README.
+
+I understand and can explain each step of the analysis.
+
 ## Overview
 
 Insurers need to know not just their expected annual losses, but how bad a rare year could be. This project simulates 10,000 years of claims to estimate the full distribution of annual aggregate losses, measures tail risk, validates the results against theory, and tests how sensitive the results are to key assumptions.
@@ -60,5 +70,5 @@ Python · NumPy · pandas · matplotlib · seaborn
 
 ## Files
 
-- `[your notebook name].ipynb`: full analysis with code and commentary
+- `Monte Carlo-Final.ipynb`: full analysis with code and commentary
 - `loss_distribution.png`, `cv_sensitivity.png`: charts
